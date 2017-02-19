@@ -1,0 +1,54 @@
+create table student( id integer not null primary key,
+			 name varchar(10) not null,
+			 hostel varchar(10)
+			);
+
+select name
+from student;
+
+
+select name 
+from student
+where data1 = (select id
+		    from student 
+		    where hostel = umiam	
+		   );
+
+
+insert into student(name, hostel)
+values(pintu, umiam);
+
+
+
+
+
+update student
+set name = mintu
+where name = pintu ;
+
+
+
+delete from student 
+where name = mintu;
+
+
+
+drop table student;
+
+
+
+alter table student
+drop  hostel;
+
+
+
+
+alter table student
+add webmail varchar(34);
+
+
+
+
+
+
+
